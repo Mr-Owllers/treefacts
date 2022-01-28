@@ -19,9 +19,9 @@ make
 ### windows
 > there is currently no .bat or .exe file for installation so manual installation needs to be done
 ```
-gcc src/treefacts.c -o bin/treefacts.exe
 gcc src/treefacts.c -o obj/treefacts.o
 gcc src/libtreefacts.c -o obj/libtreefacts.o
+gcc obj/treefacts.o -o bin/treefacts.exe
 ```
 > you can copy & paste or move treefacts.exe to anywhere you want in your computer
 
