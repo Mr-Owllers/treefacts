@@ -23,9 +23,7 @@ cd treefacts
 make u
 ```
 ## Usage
-To use TreeFacts without having to CD into the `bin` folder, you can run `make build`
-
-Then, to display the help menu, you can run this:
+To display the help menu, you can run this:
 ```sh
 treefacts --help
 ```
@@ -33,3 +31,8 @@ treefacts --help
 [Mr-Owllers](https://github.com/Mr-Owllers)
 
 [Erdi-GitHub (Erdi)](https://github.com/Erdi-GitHub)
+
+---
+> under the MIT license
+> 
+> Current Version- v1.0.0
