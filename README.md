@@ -18,7 +18,7 @@ gcc obj/treefacts.o -o bin/treefacts.exe
 ```
 
 ## Uninstallation
-## UNIX-like
+### UNIX-like
 ```sh
 cd treefacts
 make uninstall
