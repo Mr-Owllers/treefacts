@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <curl/curl.h>
 #include <string.h>
 #include <stdlib.h>
 #include "ascii-colours.h"
@@ -43,13 +42,13 @@ int main(int argc, char const *argv[]) {
                 printf("\x1b[%d;0H", y);
                 printf(YEL);
                 printf("--");
-                printf(info.NAME);
+                printf("%s", info.NAME);
                 printf("\x1b[%d;15H", y);
                 printf(GRN);
                 printf("-%c", info.ALIAS);
                 printf("\x1b[%d;20H", y);
                 printf(BLU);
-                printf(info.DESC);
+                printf("%s", info.DESC);
             }
 
             printf("\n");

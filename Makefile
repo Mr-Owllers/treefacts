@@ -5,7 +5,14 @@ NAME=treefacts
 
 CC?=gcc
 
-i: bin obj build
+bin:
+	mkdir bin
+
+obj:
+	mkdir obj
+
+install: bin obj bin/$(NAME)
+	sudo cp bin/$(NAME) /usr/local/bin/$(NAME)
 
 bin/$(NAME): $(OBJS)
 	$(CC) $(wildcard obj/*.o) -o $@ $(LIBS)
@@ -17,8 +24,9 @@ run: bin/$(NAME)
 	chmod u+x bin/$(NAME)
 	bin/$(NAME)
 
-build: bin/$(NAME)
-	sudo cp bin/$(NAME) /usr/local/bin/$(NAME)
-
-u:
+uninstall:
 	sudo rm /usr/local/bin/$(NAME)
+
+clean:
+	rm bin -rf
+	rm obj -rf
