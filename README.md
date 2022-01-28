@@ -48,5 +48,8 @@ make u
 - Mr-Owllers ([Github](https://github.com/Mr-Owllers))
 - Erdi-GitHub ([Github](https://github.com/Erdi-GitHub))
 
+## version
+[v1.0.0](CHANGELOG.md)
+
 ## license
 under the [mit license](LICENSE)
