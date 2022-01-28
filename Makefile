@@ -5,6 +5,8 @@ NAME=treefacts
 
 CC?=gcc
 
+i: bin obj build
+
 bin/$(NAME): $(OBJS)
 	$(CC) $(wildcard obj/*.o) -o $@ $(LIBS)
 
