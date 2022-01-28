@@ -19,3 +19,6 @@ run: bin/$(NAME)
 
 build: bin/$(NAME)
 	sudo cp bin/$(NAME) /usr/local/bin/$(NAME)
+
+u:
+	sudo rm /usr/local/bin/$(NAME)
