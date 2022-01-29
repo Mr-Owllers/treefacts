@@ -16,6 +16,13 @@ make install
 yay -S treefacts
 ```
 
++ ### Debian-based Distros
+```sh
+git clone https://github.com/Mr-Owllers/treefacts.git
+cd treefacts
+sudo apt install treefacts_1.0-1_amd64.deb
+```
+
 ### Windows
 ```sh
 git clone https://github.com/Mr-Owllers/treefacts.git
@@ -27,10 +34,21 @@ gcc obj/treefacts.o -o bin/treefacts.exe
 
 ## Uninstallation
 ### UNIX-like
++ ### If manually installed
 ```sh
 cd treefacts
 make uninstall
 ```
+
++ ### Arch Linux
+```sh
+yay -R treefacts
+```
++ ### Debian-based Distros
+```sh
+sudo apt remove treefacts_1.0-1_amd64.deb
+```
+
 ## Usage
 Displaying the help menu:
 ```sh
