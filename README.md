@@ -5,13 +5,13 @@ Warning: This app doesn't fully support Windows devices and hasn't been tested o
 - GCC
 - Curl
 ### UNIX-like
++ ### Manually
 ```sh
 git clone https://github.com/Mr-Owllers/treefacts.git
 cd treefacts
 make install
 ```
-
-### Arch Linux
++ ### Arch Linux
 ```sh
 yay -S treefacts
 ```
