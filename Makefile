@@ -12,7 +12,7 @@ obj:
 	mkdir obj
 
 install: bin obj bin/$(NAME)
-	sudo cp bin/$(NAME) /usr/local/bin/$(NAME)
+	sudo cp bin/$(NAME) /usr/bin/$(NAME)
 
 bin/$(NAME): $(OBJS)
 	$(CC) $(wildcard obj/*.o) -o $@ $(LIBS)
@@ -25,7 +25,7 @@ run: bin/$(NAME)
 	bin/$(NAME)
 
 uninstall:
-	sudo rm /usr/local/bin/$(NAME)
+	sudo rm /usr/bin/$(NAME)
 
 clean:
 	rm bin -rf
