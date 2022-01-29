@@ -10,6 +10,12 @@ git clone https://github.com/Mr-Owllers/treefacts.git
 cd treefacts
 make install
 ```
+
+### Arch Linux
+```sh
+yay -S treefacts
+```
+
 ### Windows
 ```sh
 gcc src/treefacts.c -o obj/treefacts.o
