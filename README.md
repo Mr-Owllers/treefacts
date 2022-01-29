@@ -18,6 +18,8 @@ yay -S treefacts
 
 ### Windows
 ```sh
+git clone https://github.com/Mr-Owllers/treefacts.git
+cd treefacts
 gcc src/treefacts.c -o obj/treefacts.o
 gcc src/libtreefacts.c -o obj/libtreefacts.o
 gcc obj/treefacts.o -o bin/treefacts.exe
