@@ -1,4 +1,5 @@
 # TreeFacts - A CLI application that displays facts about trees
+Warning: This app doesn't fully support Windows devices and hasn't been tested on Windows devices.
 ## Installation
 ### Requirements
 - GCC
@@ -7,7 +8,7 @@
 ```sh
 git clone https://github.com/Mr-Owllers/treefacts.git
 cd treefacts
-make
+make install
 ```
 ### Windows
 ```sh
@@ -17,22 +18,28 @@ gcc obj/treefacts.o -o bin/treefacts.exe
 ```
 
 ## Uninstallation
-## UNIX-like
+### UNIX-like
 ```sh
 cd treefacts
-make u
+make uninstall
 ```
 ## Usage
-To display the help menu, you can run this:
+Displaying the help menu:
 ```sh
 treefacts --help
+```
+The help menu:
+```
+----------- TreeFacts Help Menu -----------
+
+--help        -h   Displays this help menu
+--randomfact  -r   Get a randomfact
+--fact        -f   Gets today's fact
+--dayfact     -d   Gets the fact of the specified day
+--indexfact   -i   Gets a fact by index
+--fetch       -e   Fetches tree ASCII art
 ```
 ## Authors
 [Mr-Owllers](https://github.com/Mr-Owllers)
 
 [Erdi-GitHub (Erdi)](https://github.com/Erdi-GitHub)
-
----
-> under the MIT license
-> 
-> Current Version- v1.0.0
