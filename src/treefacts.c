@@ -15,8 +15,8 @@ void fetch() {
     printf(" /\\*\\/\\*\\/\\/\\\n");
     printf("/\\O\\/\\/O/\\/*/\\\n");
     printf(RED);
-    printf("      ||/\n");
-    printf("      ||\n" );
+    printf("      ||//\n");
+    printf("      | /\n" );
     printf("   %s@%s  ||            @           %s@\n", BLU, RED, YEL); // flower
     printf("%s__\\|/_%s||%s___________\\|/_________\\|/___\n", GRN, RED, GRN); // ground
 }
