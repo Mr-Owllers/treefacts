@@ -6,17 +6,17 @@
 #include <stdio.h>
 
 #ifdef __unix__
-    #define WINDOWS 0
-    #define UNIX 1
+    #define windows 0
+    #define unix 1
     
-    #define CURL_COMMAND "curl"
+    #define CURL_COMMAND "curl --silent"
     #define CAT "cat"
     #define TEMP_RES "/tmp/temp-res.json"
 #elif defined(_WIN32) || defined(WIN32)
-    #define WINDOWS 1
-    #define UNIX 0
+    #define windows 1
+    #define unix 0
     
-    #define CURL_COMMAND "curl.exe"
+    #define CURL_COMMAND "curl.exe --silent"
     #define CAT "type"
     #define TEMP_RES "\%Temp\%/temp-res.json"
 #endif

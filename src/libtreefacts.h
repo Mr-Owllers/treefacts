@@ -1,13 +1,11 @@
+#ifndef _LIB_TREEFACTS_H
+#define _LIB_TREEFACTS_H
+
 #ifdef __cplusplus
-extern "c" {
+extern "C" {
 #endif
 
 #define TREEFACTS_URL "https://treefacts-server.mrowllers.repl.co"
-
-typedef struct t_fact {
-    unsigned int index;
-    char *fact;
-} Fact;
 
 /**
 * prints a random fact
@@ -31,4 +29,6 @@ void *TreeFacts_FactFromIndex(unsigned int index);
 
 #ifdef __cplusplus
 }
+#endif
+
 #endif
