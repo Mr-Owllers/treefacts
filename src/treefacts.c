@@ -1,9 +1,10 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include "ascii-colours.h"
 #include "libtreefacts.h"
 #include "help.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 void fetch() {
     printf(GRN);

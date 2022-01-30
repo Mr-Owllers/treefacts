@@ -1,3 +1,6 @@
+#ifndef _HELP_H
+#define _HELP_H
+
 typedef struct t_commandInfo {
     const char *NAME;
     const char *DESC;
@@ -14,3 +17,5 @@ typedef struct t_commandInfo {
     { "indexfact", "Gets a fact by index", 'i' },\
     { "fetch", "Fetches tree ASCII art", 'e' }\
 }
+
+#endif

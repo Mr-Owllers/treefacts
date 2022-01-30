@@ -1,20 +1,20 @@
 #include "libtreefacts.h"
-
 #include "ascii-colours.h"
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 #ifdef __unix__
-    #define WINDOWS 0
-    #define UNIX 1
+    #define windows 0
+    #define unix 1
     
     #define CURL_COMMAND "curl"
     #define CAT "cat"
     #define TEMP_RES "/tmp/temp-res.json"
 #elif defined(_WIN32) || defined(WIN32)
-    #define WINDOWS 1
-    #define UNIX 0
+    #define windows 1
+    #define unix 0
     
     #define CURL_COMMAND "curl.exe"
     #define CAT "type"
@@ -23,9 +23,7 @@
 
 #define URL "https://treefacts-server.mrowllers.repl.co"
 
-void error(const char *message);
-
-void *TreeFacts_RandomFact() {
+void TreeFacts_RandomFact() {
     char command[128];
 
     snprintf(command, 128, "%s%s%s%s%s", CURL_COMMAND, " ", URL, "/fact/random -o ", TEMP_RES);
@@ -39,7 +37,7 @@ void *TreeFacts_RandomFact() {
     system(outputCommand);
 }
 
-void *TreeFacts_TodayFact() {
+void TreeFacts_TodayFact() {
     char command[128];
 
     snprintf(command, 128, "%s%s%s%s%s", CURL_COMMAND, " ", URL, "/fact -o ", TEMP_RES);
@@ -53,7 +51,7 @@ void *TreeFacts_TodayFact() {
     system(outputCommand);
 }
 
-void *TreeFacts_Fact(int day) {
+void TreeFacts_Fact(int day) {
     char command[128];
 
     snprintf(command, 128, "%s%s%s%s%d%s%s", CURL_COMMAND, " ", URL, "/fact/day/", day, " -o ", TEMP_RES);
@@ -67,7 +65,7 @@ void *TreeFacts_Fact(int day) {
     system(outputCommand);
 }
 
-void *TreeFacts_FactFromIndex(unsigned int index) {
+void TreeFacts_FactFromIndex(unsigned int index) {
     char command[128];
 
     snprintf(command, 128, "%s%s%s%s%d%s%s", CURL_COMMAND, " ", URL, "/fact/", index, " -o ", TEMP_RES);
@@ -79,11 +77,4 @@ void *TreeFacts_FactFromIndex(unsigned int index) {
     snprintf(outputCommand, 128, "%s%s%s", CAT, " ", TEMP_RES);
 
     system(outputCommand);
-}
-
-void error(const char *message) {
-    printf(RED);
-    printf(message);
-
-    exit(1);
 }
