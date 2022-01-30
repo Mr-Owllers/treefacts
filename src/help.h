@@ -1,15 +1,15 @@
 #ifndef _HELP_H
 #define _HELP_H
 
-typedef struct COMMAND_INFO {
+typedef struct t_commandInfo {
     const char *NAME;
     const char *DESC;
     const char ALIAS;
-} command_info_t;
+} CommandInfo;
 
 #define HELP_C 6
 
-#define HELP_MENU (command_info_t[]) {\
+#define HELP_MENU (CommandInfo[]) {\
     { "help", "Displays this help menu", 'h' },\
     { "randomfact", "Get a randomfact", 'r' },\
     { "fact", "Gets today's fact", 'f' },\

@@ -1,9 +1,10 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 #include "ascii-colours.h"
 #include "libtreefacts.h"
 #include "help.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 void fetch() {
     printf(GRN);
@@ -15,7 +16,7 @@ void fetch() {
     printf(" /\\*\\/\\*\\/\\/\\\n");
     printf("/\\O\\/\\/O/\\/*/\\\n");
     printf(RED);
-    printf("      ||\n");
+    printf("      ||/\n");
     printf("      ||\n" );
     printf("   %s@%s  ||            @           %s@\n", BLU, RED, YEL); // flower
     printf("%s__\\|/_%s||%s___________\\|/_________\\|/___\n", GRN, RED, GRN); // ground
@@ -35,7 +36,7 @@ int main(int argc, char const *argv[]) {
             printf("----------- TreeFacts Help Menu -----------");
 
             for(int i = 0; i < HELP_C; i++) {
-                command_info_t info = HELP_MENU[i];
+                CommandInfo info = HELP_MENU[i];
 
                 int y = i + 3;
 
