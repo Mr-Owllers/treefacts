@@ -1,5 +1,4 @@
 # TreeFacts - A CLI application that displays facts about trees
-Warning: This app doesn't fully support Windows devices and hasn't been tested on Windows devices.
 ## Installation
 ### Requirements
 - GCC
@@ -11,19 +10,11 @@ git clone https://github.com/Mr-Owllers/treefacts.git
 cd treefacts
 make install
 ```
-+ ### Arch Linux
-```sh
-yay -S treefacts
-```
-
-+ ### Debian-based Distros
-```sh
-git clone https://github.com/Mr-Owllers/treefacts.git
-cd treefacts
-sudo apt install treefacts_1.0-1_amd64.deb
-```
++ ### Snap
+> comming soon
 
 ### Windows
+> Warning: This app doesn't fully support Windows devices and hasn't been tested on Windows devices.
 ```sh
 git clone https://github.com/Mr-Owllers/treefacts.git
 cd treefacts
@@ -38,15 +29,6 @@ gcc obj/treefacts.o -o bin/treefacts.exe
 ```sh
 cd treefacts
 make uninstall
-```
-
-+ ### Arch Linux
-```sh
-yay -R treefacts
-```
-+ ### Debian-based Distros
-```sh
-sudo apt remove treefacts_1.0-1_amd64.deb
 ```
 
 ## Usage

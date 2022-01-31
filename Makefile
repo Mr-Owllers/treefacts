@@ -5,14 +5,12 @@ NAME=treefacts
 
 CC?=gcc
 
-bin:
-	mkdir bin
-
-obj:
-	mkdir obj
-
-install: bin obj bin/$(NAME)
+install: folders bin/$(NAME)
 	sudo cp bin/$(NAME) /usr/bin/$(NAME)
+
+folders:
+	if [ ! -d "bin" ]; then mkdir bin; fi
+	if [ ! -d "obj" ]; then mkdir obj; fi
 
 bin/$(NAME): $(OBJS)
 	$(CC) $(wildcard obj/*.o) -o $@ $(LIBS)
@@ -28,5 +26,4 @@ uninstall:
 	sudo rm /usr/bin/$(NAME)
 
 clean:
-	rm bin -rf
-	rm obj -rf
+	rm bin obj -rf
