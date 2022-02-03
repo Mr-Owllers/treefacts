@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-color: #9AD8FF;
+    /* margin: 30px; */
+}
+
+.code {
+    background-color: #88abc0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+}
+
+code{
+    font-family: monospace;
+    background-color: #88abc0;
+}
+
+.hl {
+    color: #444dca;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.link {
+    color: #4350ff;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.link:hover {
+    color: #4350ff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.linkp {
+    color: #4350ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.linkp:hover {
+    color: #4350ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.warn {
+    font-style: bold;
+    color: rgb(255, 0, 0);
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* tree */
+/* .tree {
+    background-color: #88abc0;
+    padding: 10px;
+    width: 50%;
+    height: 350px;
+}
+
+.tree-trunk {
+    background-color: #A66530;
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    top: 140px;
+    left: 250px;
+}
+
+.tree-branch1 {
+    background-color: #A66530;
+    position: absolute;
+    top: 170px;
+    right: 210px;
+    width: 50px;
+    height: 100px;
+    transform: rotate(65deg);
+}
+
+.tree-branch2 {
+    background-color: #A66530;
+    position: absolute;
+    top: 145px;
+    left: 214px;
+    width: 25px;
+    height: 75px;
+    transform: rotate(-65deg);
+}
+
+.tree-leaves1 {
+    background-color: #30a657;
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.tree-leaves2 {
+    background-color: #30a657;
+    position: absolute;
+    top: 125px;
+    right: 115px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+} */
+
+.footext {
+    font-size: 14px;
+    color: #222222;
+    text-align: center;
+}
+
+/* make the site responsive */
+@media screen and (max-width: 1000px) {
+    .code {
+        width: 75%;
+    }
+    .greeter {
+        height: 75%;
+        width: 75%;
+    }
+}
