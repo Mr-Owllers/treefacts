@@ -130,7 +130,31 @@ hr {
     text-align: center;
 }
 
-/* make the site responsive */
+.back {
+    background-color: cornflowerblue;
+    height: auto;
+    width: 6%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.bbutton:link {
+    color: #181717;
+    text-decoration: none;
+}
+
+.bbutton:visited {
+    color: #181717;
+    text-decoration: none;
+}
+
+.bbutton:hover {
+    color: #52525c;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1000px) {
     .code {
         width: 75%;
@@ -138,5 +162,23 @@ hr {
     .greeter {
         height: 75%;
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .back {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .back {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .back {
+        width: 24%;
     }
 }
