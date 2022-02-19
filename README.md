@@ -4,14 +4,11 @@
 - GCC
 - Curl
 ### UNIX-like
-+ ### Manually
 ```sh
 git clone https://github.com/Mr-Owllers/treefacts.git
 cd treefacts
 make install
 ```
-+ ### Snap
-> comming soon
 
 ### Windows
 > Warning: This app doesn't fully support Windows devices and hasn't been tested on Windows devices.
@@ -25,7 +22,6 @@ gcc obj/treefacts.o -o bin/treefacts.exe
 
 ## Uninstallation
 ### UNIX-like
-+ ### If manually installed
 ```sh
 cd treefacts
 make uninstall
@@ -48,6 +44,5 @@ The help menu:
 --fetch       -e   Fetches tree ASCII art
 ```
 ## Authors
-[Mr-Owllers](https://github.com/Mr-Owllers)
-
+[Mr-Owllers](https://github.com/Mr-Owllers)\
 [Erdi-GitHub (Erdi)](https://github.com/Erdi-GitHub)
